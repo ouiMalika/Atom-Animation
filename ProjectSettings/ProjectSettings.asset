@@ -239,10 +239,10 @@ PlayerSettings:
   appleDeveloperTeamID: N9GZG3C5TY
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
-  VisionOSManualSigningProvisioningProfileID: 
+  VisionOSManualSigningProvisioningProfileID: 5aed7184-2ce5-4cc9-af73-7bcb92d0f9e4
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
-  VisionOSManualSigningProvisioningProfileType: 0
+  VisionOSManualSigningProvisioningProfileType: 2
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
