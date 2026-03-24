@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA200000000000000000001A /* AtomAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001A /* AtomAnimationApp.swift */; };
+		AA200000000000000000002A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002A /* ContentView.swift */; };
+		AA200000000000000000003A /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003A /* ImmersiveView.swift */; };
+		AA200000000000000000004A /* AtomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004A /* AtomViewModel.swift */; };
+		AA200000000000000000005A /* XYZFrameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005A /* XYZFrameLoader.swift */; };
+		AA200000000000000000007A /* txt_frames in Resources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000007A /* txt_frames */; };
+		AA200000000000000000020A /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA100000000000000000020A /* RealityKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA100000000000000000001A /* AtomAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomAnimationApp.swift; sourceTree = "<group>"; };
+		AA100000000000000000002A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA100000000000000000003A /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		AA100000000000000000004A /* AtomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomViewModel.swift; sourceTree = "<group>"; };
+		AA100000000000000000005A /* XYZFrameLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZFrameLoader.swift; sourceTree = "<group>"; };
+		AA100000000000000000006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA100000000000000000007A /* txt_frames */ = {isa = PBXFileReference; lastKnownFileType = folder; path = txt_frames; sourceTree = "<group>"; };
+		AA100000000000000000008A /* AtomAnimationNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtomAnimationNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA100000000000000000020A /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA300000000000000000003A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA200000000000000000020A /* RealityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA222222222222222222222A = {
+			isa = PBXGroup;
+			children = (
+				AA444444444444444444444A /* AtomAnimationNative */,
+				AA666666666666666666666A /* Frameworks */,
+				AA333333333333333333333A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA333333333333333333333A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA100000000000000000008A /* AtomAnimationNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA444444444444444444444A /* AtomAnimationNative */ = {
+			isa = PBXGroup;
+			children = (
+				AA100000000000000000001A /* AtomAnimationApp.swift */,
+				AA100000000000000000002A /* ContentView.swift */,
+				AA100000000000000000003A /* ImmersiveView.swift */,
+				AA100000000000000000004A /* AtomViewModel.swift */,
+				AA100000000000000000005A /* XYZFrameLoader.swift */,
+				AA100000000000000000006A /* Info.plist */,
+				AA100000000000000000007A /* txt_frames */,
+			);
+			path = AtomAnimationNative;
+			sourceTree = "<group>";
+		};
+		AA666666666666666666666A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA100000000000000000020A /* RealityKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA400000000000000000001A /* AtomAnimationNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA600000000000000000001A /* Build configuration list for PBXNativeTarget "AtomAnimationNative" */;
+			buildPhases = (
+				AA300000000000000000001A /* Sources */,
+				AA300000000000000000002A /* Resources */,
+				AA300000000000000000003A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtomAnimationNative;
+			productName = AtomAnimationNative;
+			productReference = AA100000000000000000008A /* AtomAnimationNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA111111111111111111111A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA400000000000000000001A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA600000000000000000002A /* Build configuration list for PBXProject "AtomAnimationNative" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA222222222222222222222A;
+			productRefGroup = AA333333333333333333333A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA400000000000000000001A /* AtomAnimationNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA300000000000000000002A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA200000000000000000007A /* txt_frames in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA300000000000000000001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA200000000000000000001A /* AtomAnimationApp.swift in Sources */,
+				AA200000000000000000002A /* ContentView.swift in Sources */,
+				AA200000000000000000003A /* ImmersiveView.swift in Sources */,
+				AA200000000000000000004A /* AtomViewModel.swift in Sources */,
+				AA200000000000000000005A /* XYZFrameLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA500000000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomanimation.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		AA500000000000000000002A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomanimation.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		AA500000000000000000003A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA500000000000000000004A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA600000000000000000001A /* Build configuration list for PBXNativeTarget "AtomAnimationNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA500000000000000000001A /* Debug */,
+				AA500000000000000000002A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA600000000000000000002A /* Build configuration list for PBXProject "AtomAnimationNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA500000000000000000003A /* Debug */,
+				AA500000000000000000004A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA111111111111111111111A /* Project object */;
+}
