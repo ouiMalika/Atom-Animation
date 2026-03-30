@@ -30,6 +30,9 @@ public class MoleculeManager : MonoBehaviour
         LoadSimulation(startFolder);
     }
 
+    /// <summary>Alias used by AnimationSwitcher.</summary>
+    public void PlayAnimationFromFolder(string folder) => LoadSimulation(folder);
+
     /// <summary>Called by SimulationMenu buttons.</summary>
     public void LoadSimulation(string folder)
     {

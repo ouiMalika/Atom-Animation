@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR;
 using System.Collections.Generic;
 
@@ -61,7 +62,7 @@ public class QuestPointer : MonoBehaviour
             Transform t = hit.collider.transform;
             while (t != null)
             {
-                UnityEngine.UI.Button uiBtn = t.GetComponent<UnityEngine.UI.Button>();
+                Button uiBtn = t.GetComponent<Button>();
                 if (uiBtn == simulationMenu.annealButton || uiBtn == simulationMenu.tensileButton)
                 {
                     hitButton = uiBtn;
