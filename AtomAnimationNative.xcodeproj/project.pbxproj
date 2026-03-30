@@ -162,14 +162,10 @@
 		AA500000000000000000001A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				// SIGNING: Automatic + "Apple Development" forces a LOCAL development
-				// certificate. Xcode creates the profile on-device automatically.
-				// This never triggers the cloud-managed distribution cert check.
-				// Only change needed: set DEVELOPMENT_TEAM to your 10-char Apple Team ID.
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -193,8 +189,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
