@@ -7,7 +7,7 @@ using UnityEngine;
 /// Attach to an empty GameObject in the scene. Assign atomPrefab, hydrogenMaterial, carbonMaterial.
 /// Fallback folder: "txt_frames" (existing data). Target folders: "anneal", "tensile".
 /// </summary>
-public class MoleculeLoader : MonoBehaviour
+public class MoleculeManager : MonoBehaviour
 {
     [Header("Assign in Inspector")]
     public GameObject atomPrefab;
@@ -49,7 +49,7 @@ public class MoleculeLoader : MonoBehaviour
 
         if (allFrames.Count == 0)
         {
-            Debug.LogError($"[MoleculeLoader] No frames found in Resources/{folder}/ or Resources/txt_frames/");
+            Debug.LogError($"[MoleculeManager] No frames found in Resources/{folder}/ or Resources/txt_frames/");
             return;
         }
 
@@ -76,12 +76,12 @@ public class MoleculeLoader : MonoBehaviour
 
         if (activeFolder == null)
         {
-            Debug.LogError("[MoleculeLoader] Cannot find frame_000 in any Resources subfolder.");
+            Debug.LogError("[MoleculeManager] Cannot find frame_000 in any Resources subfolder.");
             return folder;
         }
 
         if (activeFolder != folder)
-            Debug.LogWarning($"[MoleculeLoader] Folder '{folder}' not found, using '{activeFolder}' instead.");
+            Debug.LogWarning($"[MoleculeManager] Folder '{folder}' not found, using '{activeFolder}' instead.");
 
         // Detect total frame count
         int frameCount = 0;
@@ -94,7 +94,7 @@ public class MoleculeLoader : MonoBehaviour
             }
         }
 
-        Debug.Log($"[MoleculeLoader] Loading {frameCount} frames from Resources/{activeFolder}/");
+        Debug.Log($"[MoleculeManager] Loading {frameCount} frames from Resources/{activeFolder}/");
 
         Vector3 min = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
         Vector3 max = new Vector3(float.MinValue, float.MinValue, float.MinValue);
@@ -157,7 +157,7 @@ public class MoleculeLoader : MonoBehaviour
 
     void CreateAtoms()
     {
-        if (atomPrefab == null) { Debug.LogError("[MoleculeLoader] atomPrefab is not assigned!"); return; }
+        if (atomPrefab == null) { Debug.LogError("[MoleculeManager] atomPrefab is not assigned!"); return; }
         int atomCount = allFrames[0].Count;
         for (int i = 0; i < atomCount; i++)
         {

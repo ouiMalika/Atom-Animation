@@ -10,7 +10,7 @@ using UnityEngine.EventSystems;
 public class SimulationMenu : MonoBehaviour
 {
     [Header("Assign in Inspector")]
-    public MoleculeLoader moleculeLoader;
+    public MoleculeManager moleculeLoader;
 
     // Exposed so QuestPointer can find and highlight them
     [HideInInspector] public Button annealButton;
