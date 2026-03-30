@@ -1,0 +1,21 @@
+// Release / Archive — TestFlight & App Store distribution.
+// Fill in PROVISIONING_PROFILE_SPECIFIER with the UUID from developer.apple.com
+// after following the steps below.
+//
+// HOW TO CREATE THE CORRECT PROVISIONING PROFILE:
+//   1. developer.apple.com → Certificates, IDs & Profiles → Profiles → +
+//   2. Under "Distribution" choose: App Store Connect
+//   3. IMPORTANT: Platform dropdown → select "visionOS" (NOT iOS/iPadOS)
+//   4. App ID → com.nhi.NanoHumanInterfaces
+//   5. Certificate → select your manually-created Distribution cert (CSR one)
+//   6. Name it e.g. "NHI visionOS AppStore"
+//   7. Download → double-click to install
+//   8. Find its UUID: open Terminal →
+//        security cms -D -i ~/Downloads/NHI_visionOS_AppStore.mobileprovision | grep -A1 UUID
+//   9. Paste that UUID below as PROVISIONING_PROFILE_SPECIFIER
+//
+#include "AtomAnimationNative.xcconfig"
+
+CODE_SIGN_IDENTITY = Apple Distribution
+CODE_SIGN_STYLE = Manual
+PROVISIONING_PROFILE_SPECIFIER =

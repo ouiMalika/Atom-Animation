@@ -1,0 +1,6 @@
+// Debug — local development, runs directly on device from Xcode.
+// No distribution certs involved.
+#include "AtomAnimationNative.xcconfig"
+
+CODE_SIGN_IDENTITY = Apple Development
+CODE_SIGN_STYLE = Automatic
