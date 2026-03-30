@@ -66,15 +66,24 @@ public class XYZLoader : MonoBehaviour
             allFrames.Add(positions);
         }
 
-        // Normalize positions
+        // Normalize positions: center, scale to ~1m, rotate flat sheet to face forward,
+        // then offset to sit 2m in front of the user at eye height.
         Vector3 center = (min + max) / 2f;
-        float scale = 0.5f;
+        Vector3 extent = max - min;
+        float maxExtent = Mathf.Max(extent.x, Mathf.Max(extent.y, extent.z));
+        float scale = 1.0f / maxExtent; // fit in a 1m cube
+
+        // The molecule is a flat sheet in XY. Rotate 90° around X so it faces -Z (towards user).
+        Quaternion faceForward = Quaternion.Euler(90f, 0f, 0f);
+        // Place 2m in front, 1.6m high (eye level standing).
+        Vector3 worldOffset = new Vector3(0f, 1.6f, -2f);
 
         for (int f = 0; f < allFrames.Count; f++)
         {
             for (int a = 0; a < allFrames[f].Count; a++)
             {
-                allFrames[f][a] = (allFrames[f][a] - center) * scale;
+                Vector3 local = (allFrames[f][a] - center) * scale;
+                allFrames[f][a] = faceForward * local + worldOffset;
             }
         }
 
