@@ -162,9 +162,14 @@
 		AA500000000000000000001A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				// SIGNING: Automatic + "Apple Development" forces a LOCAL development
+				// certificate. Xcode creates the profile on-device automatically.
+				// This never triggers the cloud-managed distribution cert check.
+				// Only change needed: set DEVELOPMENT_TEAM to your 10-char Apple Team ID.
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -172,7 +177,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomanimation.native;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhi.NanoHumanInterfaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -186,9 +191,10 @@
 		AA500000000000000000002A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = AtomAnimationNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -196,7 +202,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atomanimation.native;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nhi.NanoHumanInterfaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";

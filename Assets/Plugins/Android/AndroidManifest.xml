@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/app_icon"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup">
+
+        <!-- Unity's activity for Quest 3S (API 32+) -->
+        <activity
+            android:name="com.unity3d.player.UnityPlayerGameActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="density|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+            android:hardwareAccelerated="false"
+            android:resizeableActivity="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Marks this as a VR app on Meta Quest -->
+                <category android:name="com.oculus.intent.category.VR" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+    <!-- Quest 3S requires 6DOF head-tracking -->
+    <uses-feature
+        android:name="android.hardware.vr.headtracking"
+        android:required="true"
+        android:version="1" />
+
+    <!-- OpenXR hand/controller tracking (optional but recommended for Quest 3S) -->
+    <uses-feature
+        android:name="oculus.software.handtracking"
+        android:required="false" />
+
+    <!-- Internet permission (Unity analytics, etc.) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Quest 3S = API 32; Meta recommends targeting 32 -->
+    <uses-sdk
+        android:minSdkVersion="32"
+        android:targetSdkVersion="32" />
+
+</manifest>
