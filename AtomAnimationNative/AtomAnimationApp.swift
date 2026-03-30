@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AtomAnimationApp: App {
+struct NanoHumanInterfacesApp: App {
     @State private var viewModel = AtomViewModel()
 
     var body: some Scene {

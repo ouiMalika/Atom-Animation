@@ -1,0 +1,24 @@
+// Single source of truth for build identity.
+// The ONLY line you need to change: set DEVELOPMENT_TEAM to your 10-char Apple Team ID.
+
+PRODUCT_BUNDLE_IDENTIFIER = com.nhi.NanoHumanInterfaces
+PRODUCT_NAME = NanoHumanInterfaces
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+
+// Signing — "Apple Development" uses a local dev cert, never cloud-managed distribution.
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = Apple Development
+DEVELOPMENT_TEAM =
+
+// visionOS
+SDKROOT = xros
+SUPPORTED_PLATFORMS = xros xrsimulator
+TARGETED_DEVICE_FAMILY = 7
+XROS_DEPLOYMENT_TARGET = 1.0
+SWIFT_VERSION = 5.0
+
+INFOPLIST_FILE = AtomAnimationNative/Info.plist
+GENERATE_INFOPLIST_FILE = NO
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+SWIFT_EMIT_LOC_STRINGS = YES
