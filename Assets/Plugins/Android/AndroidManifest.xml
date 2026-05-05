@@ -8,9 +8,9 @@
         android:allowBackup="false"
         tools:replace="android:allowBackup">
 
-        <!-- Unity's activity for Quest 3S (API 32+) -->
+        <!-- Unity's standard player activity -->
         <activity
-            android:name="com.unity3d.player.UnityPlayerGameActivity"
+            android:name="com.unity3d.player.UnityPlayerActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:launchMode="singleTask"
             android:screenOrientation="landscape"
